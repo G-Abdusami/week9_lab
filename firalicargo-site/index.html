@@ -1,0 +1,1437 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="meta.title">Firali Cargo — kuryerlar uchun elektr skuter ijarasi | Toshkent</title>
+<meta name="description" content="Kuryerlar uchun elektr skuter ijarasi: kuniga 39 500 soʻm, 2 ta batareya, bepul kaska va zaryadlovchilar, texnik yordam. Toshkent, 9:00–21:00. +998 90 488-87-88">
+<meta name="theme-color" content="#0F4C81">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Firali Cargo — kuryerlar uchun elektr skuter ijarasi">
+<meta property="og:description" content="Kuniga 39 500 soʻm. 2 ta batareya, bepul kaska va zaryadlovchilar. Batareya tugasa — oʻzimiz olib boramiz.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/logo-rider.webp">
+<script>
+  document.documentElement.classList.add('js');
+  try {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches && !sessionStorage.getItem('fc-intro')) {
+      document.documentElement.classList.add('intro');
+    }
+  } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Firali Cargo",
+  "legalName": "\"Firali Cargo\" MChJ",
+  "description": "Kuryerlar uchun elektr skuter ijarasi. Toshkent.",
+  "telephone": "+998904888788",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tepaqoʻrgʻon MFY, 11-mavze, 43-uy, 12-xonadon",
+    "addressLocality": "Toshkent",
+    "addressRegion": "Uchtepa tumani",
+    "addressCountry": "UZ"
+  },
+  "openingHours": "Mo-Su 09:00-21:00",
+  "priceRange": "39 500 UZS / kun",
+  "sameAs": ["https://instagram.com/firalicargo"]
+}
+</script>
+<style>
+/* ============ Brand tokens ============
+   Pantone 19-4052 Classic Blue  -> #0F4C81
+   Pantone 361 C (logo green)    -> #43B02A  */
+:root{
+  --blue:#0F4C81;
+  --blue-700:#0B3A64;
+  --navy:#082C4E;
+  --blue-50:#EEF4FA;
+  --blue-100:#DCE8F4;
+  --green:#43B02A;
+  --green-600:#2A7F1C;      /* text-safe green on white */
+  --green-light:#A6E794;    /* text-safe green on blue */
+  --green-50:#EDF7EA;
+  --ink:#0E1B2B;
+  --muted:#4B5B70;
+  --line:#DDE6EF;
+  --bg:#F6F9FC;
+  --white:#fff;
+  --amber:#D98E04;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --font-head:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:16px;
+  --nav-h:72px;
+  --hd:.15s;               /* hero start delay (longer when the intro plays) */
+}
+@media (min-width:720px){ :root{ --gutter:32px; } }
+html.intro{ --hd:1.35s; }
+
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{
+  margin:0; font-family:var(--font-body); font-size:16px; line-height:1.6;
+  color:var(--ink); background:var(--bg);
+  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+}
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; }
+h1,h2,h3{ font-family:var(--font-head); letter-spacing:-.02em; margin:0; }
+button{ font:inherit; }
+:focus-visible{ outline:3px solid var(--green); outline-offset:3px; border-radius:8px; }
+.container{ width:min(1200px, 100% - 2*var(--gutter)); margin-inline:auto; }
+section[id]{ scroll-margin-top:calc(var(--nav-h) + 8px); }
+.sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+
+.i{ width:22px; height:22px; flex:none; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; }
+
+/* ============ Buttons ============ */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  padding:15px 24px; border-radius:999px; border:0; cursor:pointer;
+  font:700 16px/1.1 var(--font-head); text-decoration:none; white-space:nowrap;
+  position:relative; overflow:hidden; isolation:isolate;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease), background-color .3s;
+}
+.btn::after{
+  content:""; position:absolute; inset:0; z-index:-1;
+  background:linear-gradient(110deg, transparent 30%, rgba(255,255,255,.45) 50%, transparent 70%);
+  transform:translateX(-130%); transition:transform .8s var(--ease);
+}
+.btn:hover{ transform:translateY(-2px); }
+.btn:hover::after{ transform:translateX(130%); }
+.btn:active{ transform:translateY(0) scale(.98); }
+.btn-primary{ background:var(--blue); color:#fff; box-shadow:0 14px 28px -12px rgba(15,76,129,.7); }
+.btn-primary:hover{ background:var(--blue-700); }
+.btn-green{ background:var(--green); color:var(--navy); box-shadow:0 14px 28px -12px rgba(67,176,42,.75); }
+.btn-ghost{ background:#fff; color:var(--blue); box-shadow:inset 0 0 0 2px var(--blue-100); }
+.btn-white{ background:#fff; color:var(--blue); }
+.btn-outline-light{ background:transparent; color:#fff; box-shadow:inset 0 0 0 2px rgba(255,255,255,.35); }
+
+/* ============ Intro ============ */
+.intro-ov{ display:none; }
+html.intro .intro-ov{
+  display:grid; place-items:center; position:fixed; inset:0; z-index:100; background:#fff;
+  animation:ovOut .75s var(--ease) 1.2s forwards;
+}
+.intro-inner{ display:grid; justify-items:center; gap:14px; }
+.intro-rider{ width:min(300px,62vw); animation:introRide 1.35s var(--ease) both; }
+.intro-word{ width:min(220px,46vw); animation:fadeUp .6s var(--ease) .25s both; }
+.intro-line{ width:160px; height:4px; border-radius:4px; background:var(--blue-100); overflow:hidden; position:relative; }
+.intro-line::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg,var(--blue),var(--green)); transform-origin:left; animation:load 1.1s var(--ease) both; }
+@keyframes introRide{
+  0%{ transform:translateX(-70vw); opacity:0; }
+  45%{ transform:translateX(0); opacity:1; }
+  75%{ transform:translateX(0); opacity:1; }
+  100%{ transform:translateX(75vw); opacity:0; }
+}
+@keyframes load{ from{ transform:scaleX(0); } to{ transform:scaleX(1); } }
+@keyframes ovOut{ to{ transform:translateY(-100%); visibility:hidden; } }
+
+/* ============ Progress + header ============ */
+.progress{
+  position:fixed; top:0; left:0; right:0; height:3px; z-index:60;
+  background:linear-gradient(90deg,var(--blue),var(--green));
+  transform-origin:left; transform:scaleX(0);
+}
+.nav{ position:fixed; inset:0 0 auto; z-index:50; transition:background-color .35s, box-shadow .35s; }
+.nav.scrolled, .nav.open{ background:rgba(255,255,255,.96); box-shadow:0 8px 28px -18px rgba(8,44,78,.45); }
+.nav .container{ display:flex; align-items:center; gap:18px; height:var(--nav-h); }
+.brand{ display:block; flex:none; }
+.brand img{ height:40px; width:auto; }
+.nav-links{ display:flex; gap:26px; margin-left:auto; }
+.nav-links a{ position:relative; text-decoration:none; font-weight:600; font-size:15px; color:var(--navy); padding:6px 0; }
+.nav-links a::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:2px; border-radius:2px; background:var(--green);
+  transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease);
+}
+.nav-links a:hover::after{ transform:scaleX(1); }
+.lang{ position:relative; display:flex; padding:4px; border-radius:999px; background:var(--blue-50); flex:none; }
+.lang button{
+  position:relative; z-index:1; border:0; background:none; cursor:pointer;
+  font:700 13px/1 var(--font-head); padding:8px 12px; border-radius:999px; color:var(--blue);
+  transition:color .35s;
+}
+.lang button[aria-pressed="true"]{ color:#fff; }
+.lang .pill{
+  position:absolute; top:4px; bottom:4px; left:4px; width:calc(50% - 4px);
+  border-radius:999px; background:var(--blue); transition:transform .45s var(--ease);
+}
+.lang[data-lang="ru"] .pill{ transform:translateX(100%); }
+.nav-call{ padding:11px 18px; font-size:14px; }
+.burger{
+  display:none; width:44px; height:44px; border:0; border-radius:12px; background:var(--blue-50);
+  color:var(--blue); cursor:pointer; place-items:center; flex:none;
+}
+.burger .i-close{ display:none; }
+.nav.open .burger .i-menu{ display:none; }
+.nav.open .burger .i-close{ display:block; }
+
+@media (max-width:980px){
+  .burger{ display:grid; }
+  .lang{ margin-left:auto; }
+  .nav-links{
+    position:fixed; top:var(--nav-h); left:0; right:0; margin:0;
+    flex-direction:column; gap:0; padding:8px var(--gutter) 20px;
+    background:#fff; box-shadow:0 24px 40px -24px rgba(8,44,78,.5);
+    opacity:0; transform:translateY(-12px); pointer-events:none;
+    transition:opacity .35s var(--ease), transform .45s var(--ease);
+  }
+  .nav.open .nav-links{ opacity:1; transform:none; pointer-events:auto; }
+  .nav-links a{ padding:14px 0; font-size:17px; border-bottom:1px solid var(--line); }
+  .nav-links a::after{ display:none; }
+}
+@media (max-width:560px){
+  .brand img{ height:32px; }
+  .nav .container{ gap:10px; }
+  .nav-call span{ display:none; }
+  .nav-call{ padding:12px; }
+}
+
+/* ============ Hero ============ */
+.hero{
+  position:relative; overflow:hidden;
+  padding:calc(var(--nav-h) + 48px) 0 88px;
+  background:linear-gradient(180deg,#fff 0%, var(--blue-50) 100%);
+}
+.hero::before{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background-image:radial-gradient(rgba(15,76,129,.11) 1.2px, transparent 1.6px);
+  background-size:26px 26px;
+  -webkit-mask-image:linear-gradient(180deg,#000 10%, transparent 90%);
+          mask-image:linear-gradient(180deg,#000 10%, transparent 90%);
+}
+.blob{ position:absolute; border-radius:50%; pointer-events:none; }
+.blob.b1{ width:640px; height:640px; right:-180px; top:-140px; background:radial-gradient(closest-side, rgba(15,76,129,.2), transparent); }
+.blob.b2{ width:520px; height:520px; left:-200px; bottom:-240px; background:radial-gradient(closest-side, rgba(67,176,42,.22), transparent); }
+
+.hero .container{ position:relative; display:grid; grid-template-columns:1.2fr 1fr; gap:40px; align-items:center; }
+.status{
+  display:inline-flex; align-items:center; gap:10px; padding:8px 16px 8px 12px;
+  background:#fff; border-radius:999px; box-shadow:0 10px 24px -14px rgba(8,44,78,.4);
+  font-size:14px; font-weight:600; color:var(--navy);
+}
+.status .sep{ width:4px; height:4px; border-radius:50%; background:var(--blue-100); }
+.dot{ position:relative; width:10px; height:10px; border-radius:50%; background:var(--green); flex:none; }
+.dot::after{ content:""; position:absolute; inset:0; border-radius:50%; background:inherit; animation:ping 1.8s var(--ease) infinite; }
+.is-closed .dot{ background:var(--amber); }
+@keyframes ping{ from{ transform:scale(1); opacity:.7; } to{ transform:scale(2.8); opacity:0; } }
+
+.hero h1{ font-size:clamp(34px, 4.8vw, 60px); line-height:1.02; font-weight:800; margin:22px 0 20px; letter-spacing:-.035em; }
+.hero h1 .l1{ display:block; color:var(--blue); }
+.hero h1 .l2{ display:block; color:var(--green-600); font-style:italic; position:relative; width:fit-content; }
+.swoosh{ position:absolute; left:0; right:0; bottom:-.16em; height:.32em; width:100%; overflow:visible; }
+.swoosh path{ fill:none; stroke:var(--green); stroke-width:5; stroke-linecap:round; stroke-dasharray:1; stroke-dashoffset:1; animation:draw 1s var(--ease) calc(var(--hd) + .9s) forwards; }
+@keyframes draw{ to{ stroke-dashoffset:0; } }
+.w{ display:inline-block; overflow:hidden; vertical-align:bottom; padding:0 .07em .1em 0; margin-bottom:-.1em; }
+.w > span{ display:inline-block; animation:wordUp .95s var(--ease) both; animation-delay:calc(var(--hd) + var(--i) * 75ms); }
+@keyframes wordUp{ from{ transform:translateY(112%) rotate(5deg); opacity:0; } to{ transform:none; opacity:1; } }
+
+.fx{ animation:fadeUp .9s var(--ease) both; animation-delay:calc(var(--hd) + var(--d, 0s)); }
+@keyframes fadeUp{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+@keyframes pop{ 0%{ opacity:0; transform:scale(.6); } 70%{ opacity:1; transform:scale(1.06); } 100%{ opacity:1; transform:scale(1); } }
+
+.lead{ font-size:clamp(16px,1.6vw,19px); color:var(--muted); max-width:34em; margin:0 0 26px; }
+.price-pill{
+  display:inline-flex; align-items:baseline; gap:8px; flex-wrap:wrap;
+  padding:12px 20px; border-radius:18px; background:#fff;
+  box-shadow:inset 0 0 0 2px var(--green), 0 16px 30px -18px rgba(42,127,28,.55);
+  font-weight:600; color:var(--muted); margin-bottom:28px;
+}
+.price-pill b{ font:800 30px/1 var(--font-head); color:var(--blue); letter-spacing:-.02em; }
+.price-pill .cur{ font-weight:700; color:var(--blue); }
+.cta-row{ display:flex; flex-wrap:wrap; gap:12px; }
+.trust{ display:flex; flex-wrap:wrap; gap:8px 20px; margin:28px 0 0; padding:0; list-style:none; font-size:14px; font-weight:600; color:var(--navy); }
+.trust li{ display:flex; align-items:center; gap:8px; }
+.trust .i{ width:18px; height:18px; color:var(--green-600); stroke-width:3; }
+
+/* stage */
+.stage{ position:relative; width:100%; max-width:600px; aspect-ratio:1.15; justify-self:center; --px:0; --py:0; }
+.layer{ position:absolute; transform:translate3d(calc(var(--px) * var(--depth, 10) * -1px), calc(var(--py) * var(--depth, 10) * -1px), 0); transition:transform .3s ease-out; }
+.ring{ inset:2% 6%; }
+.ring svg{ width:100%; height:100%; animation:spin 48s linear infinite; }
+.ring circle{ fill:none; stroke-linecap:round; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+.glow{ position:absolute; inset:16% 12%; border-radius:50%; background:radial-gradient(closest-side, rgba(67,176,42,.24), transparent 72%); }
+.speed{ left:-2%; top:30%; width:46%; height:46%; }
+.speed i{ position:absolute; right:0; height:6px; border-radius:6px; opacity:0; background:linear-gradient(90deg, transparent, var(--green)); animation:streak 1.3s linear infinite; }
+.speed i:nth-child(2n){ background:linear-gradient(90deg, transparent, var(--blue)); }
+.speed i:nth-child(1){ top:4%;  width:70%; animation-delay:0s; }
+.speed i:nth-child(2){ top:20%; width:52%; animation-delay:.35s; }
+.speed i:nth-child(3){ top:36%; width:84%; animation-delay:.7s; }
+.speed i:nth-child(4){ top:52%; width:60%; animation-delay:.15s; }
+.speed i:nth-child(5){ top:68%; width:76%; animation-delay:.55s; }
+.speed i:nth-child(6){ top:84%; width:46%; animation-delay:.9s; }
+@keyframes streak{
+  0%{ transform:translateX(30%) scaleX(.3); opacity:0; }
+  25%{ opacity:1; }
+  100%{ transform:translateX(-120%) scaleX(1); opacity:0; }
+}
+.rider-wrap{ left:5%; right:5%; bottom:19%; }
+.rider-in{ animation:riderIn 1.25s var(--ease) both; animation-delay:var(--hd); }
+@keyframes riderIn{ from{ transform:translateX(-55%); opacity:0; } to{ transform:none; opacity:1; } }
+.rider{ width:100%; height:auto; transform-origin:60% 92%; animation:bob 2.4s ease-in-out infinite; will-change:transform; }
+@keyframes bob{ 0%,100%{ transform:translateY(0) rotate(0); } 50%{ transform:translateY(-9px) rotate(-.9deg); } }
+.shadow{ position:absolute; left:24%; right:10%; bottom:17%; height:20px; border-radius:50%; background:radial-gradient(closest-side, rgba(8,44,78,.28), transparent); animation:shadowPulse 2.4s ease-in-out infinite; }
+@keyframes shadowPulse{ 50%{ transform:scaleX(.86); opacity:.65; } }
+.road{
+  position:absolute; left:0; right:0; bottom:18%; height:6px; overflow:hidden; border-radius:6px;
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+          mask-image:linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+}
+.road-lines{ position:absolute; top:0; bottom:0; left:0; right:-72px; opacity:.4; background:repeating-linear-gradient(90deg, var(--blue) 0 36px, transparent 36px 72px); animation:road .45s linear infinite; }
+@keyframes road{ to{ transform:translateX(-72px); } }
+.chip{
+  display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:14px; background:#fff;
+  box-shadow:0 18px 34px -16px rgba(8,44,78,.45); font:700 14px/1.1 var(--font-head); color:var(--navy); white-space:nowrap;
+  animation:pop .7s var(--ease) both, float 4.2s ease-in-out infinite;
+}
+.chip .i{ width:20px; height:20px; color:var(--green-600); }
+.chip-1{ top:6%; left:0; --depth:26; }
+.chip-2{ top:40%; right:0; --depth:34; }
+.chip-3{ bottom:2%; left:14%; --depth:20; }
+.chip-1 .chip{ animation-delay:calc(var(--hd) + .9s), calc(var(--hd) + 1.6s); }
+.chip-2 .chip{ animation-delay:calc(var(--hd) + 1.05s), calc(var(--hd) + 2.2s); }
+.chip-3 .chip{ animation-delay:calc(var(--hd) + 1.2s), calc(var(--hd) + 1.9s); }
+@keyframes float{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
+.scroll-cue{ position:absolute; left:50%; bottom:22px; translate:-50% 0; width:26px; height:42px; border-radius:14px; border:2px solid var(--blue-100); }
+.scroll-cue::after{ content:""; position:absolute; left:50%; top:8px; width:4px; height:8px; margin-left:-2px; border-radius:2px; background:var(--blue); animation:cue 1.8s var(--ease) infinite; }
+@keyframes cue{ 0%{ transform:translateY(0); opacity:1; } 80%{ transform:translateY(14px); opacity:0; } 100%{ opacity:0; } }
+
+@media (max-width:900px){
+  .hero{ padding:calc(var(--nav-h) + 28px) 0 64px; }
+  .hero .container{ grid-template-columns:1fr; gap:22px; }
+  .hero h1{ font-size:clamp(34px, 8vw, 56px); }
+  .stage{ max-width:520px; }
+  .scroll-cue{ display:none; }
+}
+@media (max-width:480px){
+  .cta-row .btn{ flex:1 1 100%; }
+  .chip{ font-size:12px; padding:8px 11px; }
+  .chip .i{ width:16px; height:16px; }
+}
+
+/* ============ Stats band ============ */
+.stats{ position:relative; overflow:hidden; background:var(--blue); color:#fff; }
+.stats .container{ position:relative; display:grid; grid-template-columns:repeat(4,1fr); }
+.stat{ padding:36px 18px; text-align:center; }
+.stat + .stat{ border-left:1px solid rgba(255,255,255,.14); }
+.stat b{ display:block; font:800 clamp(34px,4.6vw,54px)/1 var(--font-head); letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
+.stat b small{ font-size:.45em; color:var(--green-light); margin-left:4px; letter-spacing:0; }
+.stat > span{ display:block; margin-top:8px; font-size:15px; opacity:.88; }
+@media (max-width:760px){
+  .stats .container{ grid-template-columns:1fr 1fr; }
+  .stat{ padding:26px 10px; }
+  .stat:nth-child(3){ border-left:0; }
+  .stat:nth-child(n+3){ border-top:1px solid rgba(255,255,255,.14); }
+}
+
+/* ============ Marquee bands ============ */
+.bands{ position:relative; overflow:hidden; padding:64px 0 54px; background:#fff; }
+.band{ display:flex; overflow:hidden; padding:16px 0; font:800 italic clamp(17px,2.3vw,26px)/1 var(--font-head); text-transform:uppercase; letter-spacing:.01em; }
+.band-blue{ background:var(--blue); color:#fff; transform:rotate(-2deg) scale(1.05); position:relative; z-index:1; box-shadow:0 18px 40px -20px rgba(8,44,78,.55); }
+.band-green{ background:var(--green); color:var(--navy); transform:rotate(1.6deg) scale(1.05); margin-top:-6px; }
+.track{ display:flex; flex:none; animation:marquee 42s linear infinite; will-change:transform; }
+.band-green .track{ animation-direction:reverse; animation-duration:48s; }
+.seq{ display:flex; flex:none; }
+.seq span{ display:inline-flex; align-items:center; gap:26px; padding-right:26px; white-space:nowrap; }
+.seq span::after{ content:""; width:10px; height:10px; border-radius:50%; background:currentColor; opacity:.45; }
+@keyframes marquee{ to{ transform:translateX(-50%); } }
+
+/* ============ Sections ============ */
+.section{ padding:clamp(72px, 10vw, 124px) 0; position:relative; }
+.section.white{ background:#fff; }
+.section.tint{ background:var(--blue-50); }
+.sec-head{ display:grid; gap:14px; max-width:760px; margin-bottom:clamp(36px,5vw,56px); }
+.sec-head.center{ margin-inline:auto; text-align:center; justify-items:center; }
+.kicker{ display:inline-flex; align-items:center; gap:10px; font:700 13px/1 var(--font-head); letter-spacing:.14em; text-transform:uppercase; color:var(--green-600); }
+.kicker::before{ content:""; width:28px; height:3px; border-radius:3px; background:var(--green); }
+.title{ font-size:clamp(30px,4.4vw,48px); line-height:1.08; font-weight:800; color:var(--navy); }
+.sub{ margin:0; color:var(--muted); font-size:clamp(16px,1.5vw,18px); max-width:58ch; }
+
+/* reveal (only when JS is running) */
+html.js .reveal{ opacity:0; transform:translateY(34px); transition:opacity .9s var(--ease), transform .9s var(--ease); transition-delay:var(--d, 0s); }
+html.js .reveal.pop{ transform:translateY(30px) scale(.92); }
+html.js .reveal.in{ opacity:1; transform:none; }
+html.js .reveal.done{ transition:transform .45s var(--ease), box-shadow .45s var(--ease), opacity .3s; transition-delay:0s; }
+html.js .tilt.reveal{ transform:perspective(1000px) translateY(34px) scale(var(--s0, 1)) rotateX(0deg) rotateY(0deg); }
+html.js .tilt.reveal.pop{ --s0:.92; }
+html.js .tilt.reveal.in{ transform:perspective(1000px) translateY(0) scale(1) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); }
+html.js .tilt.reveal.tilting{ transition-duration:.12s; transition-timing-function:linear; }
+
+/* ============ Benefits ============ */
+.ben-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.card{
+  position:relative; overflow:hidden; background:#fff; border-radius:26px; padding:30px 28px;
+  box-shadow:0 1px 0 var(--line), 0 22px 44px -30px rgba(8,44,78,.4);
+}
+.card:hover{ box-shadow:0 1px 0 var(--line), 0 34px 60px -30px rgba(8,44,78,.5); }
+.card .num{ position:absolute; top:16px; right:22px; font:800 48px/1 var(--font-head); color:var(--blue-50); pointer-events:none; }
+.card h3{ position:relative; font-size:21px; line-height:1.25; color:var(--navy); margin:0 0 10px; }
+.card p{ position:relative; margin:0; color:var(--muted); }
+.ico{ position:relative; width:58px; height:58px; border-radius:18px; display:grid; place-items:center; background:var(--blue-50); color:var(--blue); margin-bottom:20px; transition:transform .5s var(--ease); }
+.ico .i{ width:28px; height:28px; }
+.card:hover .ico{ transform:rotate(-8deg) scale(1.08); }
+.card.wide{ grid-column:span 2; display:grid; grid-template-columns:1.05fr 1fr; gap:28px; align-items:center; background:linear-gradient(135deg, var(--blue), var(--navy)); }
+.card.wide h3{ color:#fff; font-size:24px; }
+.card.wide p{ color:rgba(255,255,255,.86); }
+.card.wide .num{ color:rgba(255,255,255,.07); }
+.card.wide .ico{ background:rgba(255,255,255,.12); color:var(--green-light); }
+
+.route{ display:flex; align-items:center; gap:12px; padding:26px 18px; border-radius:20px; background:rgba(255,255,255,.07); box-shadow:inset 0 0 0 1px rgba(255,255,255,.1); }
+.pin{ display:grid; justify-items:center; gap:8px; font-size:13px; font-weight:600; color:rgba(255,255,255,.9); flex:none; }
+.pin .p-ico{ width:50px; height:50px; border-radius:16px; display:grid; place-items:center; background:#fff; color:var(--blue); }
+.pin.to .p-ico{ background:var(--green); color:var(--navy); animation:arrive 2.8s var(--ease) infinite; }
+@keyframes arrive{ 0%,72%{ transform:scale(1); } 82%{ transform:scale(1.18); } 100%{ transform:scale(1); } }
+.path{ position:relative; flex:1; height:4px; border-radius:4px; background:repeating-linear-gradient(90deg, rgba(255,255,255,.45) 0 8px, transparent 8px 16px); }
+.mover{ position:absolute; inset:0; animation:deliver 2.8s var(--ease) infinite; }
+.pack{ position:absolute; left:0; top:50%; width:40px; height:40px; margin:-20px 0 0 -20px; border-radius:12px; display:grid; place-items:center; background:var(--green); color:var(--navy); box-shadow:0 10px 22px -8px rgba(67,176,42,.85); }
+.pack .i{ width:22px; height:22px; }
+@keyframes deliver{ 0%{ transform:translateX(0); opacity:0; } 10%{ opacity:1; } 75%{ transform:translateX(100%); opacity:1; } 88%,100%{ transform:translateX(100%); opacity:0; } }
+
+.batts{ display:flex; gap:12px; margin-bottom:22px; height:58px; align-items:center; }
+.batt{ position:relative; width:52px; height:26px; padding:3px; border-radius:7px; border:3px solid var(--blue); }
+.batt::after{ content:""; position:absolute; right:-8px; top:50%; width:5px; height:10px; margin-top:-5px; border-radius:0 3px 3px 0; background:var(--blue); }
+.batt i{ display:block; height:100%; border-radius:3px; background:var(--green); transform-origin:left; animation:charge 2.6s ease-in-out infinite; }
+.batt + .batt i{ animation-delay:1.3s; }
+@keyframes charge{ 0%{ transform:scaleX(.12); } 65%,100%{ transform:scaleX(1); } }
+.card:hover .wrench{ animation:wiggle .7s var(--ease); }
+@keyframes wiggle{ 25%{ transform:rotate(-18deg); } 60%{ transform:rotate(12deg); } 100%{ transform:rotate(0); } }
+
+@media (max-width:980px){
+  .ben-grid{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:680px){
+  .ben-grid{ grid-template-columns:1fr; }
+  .card.wide{ grid-column:auto; grid-template-columns:1fr; }
+}
+
+/* ============ Kit ============ */
+.kit{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.kit-item{ position:relative; text-align:center; padding:32px 18px 26px; border-radius:26px; background:#fff; box-shadow:0 1px 0 var(--line), 0 22px 44px -30px rgba(8,44,78,.4); }
+.kit-ico{ width:104px; height:104px; margin:0 auto 18px; border-radius:50%; display:grid; place-items:center; color:var(--blue); background:radial-gradient(circle at 30% 28%, #fff 0%, var(--blue-50) 70%); box-shadow:inset 0 0 0 2px var(--blue-100); }
+.kit-ico .i{ width:52px; height:52px; stroke-width:1.7; }
+.kit-item:hover .kit-ico .i{ animation:wiggle .7s var(--ease); }
+.kit-item h3{ font-size:18px; color:var(--navy); }
+.kit-item p{ margin:6px 0 0; font-size:14px; color:var(--muted); }
+.qty{ position:absolute; top:16px; right:16px; padding:5px 11px; border-radius:999px; background:var(--green); color:var(--navy); font:800 15px/1 var(--font-head); }
+html.js .kit-item .qty{ opacity:0; }
+html.js .kit-item.in .qty{ animation:pop .6s var(--ease) both; animation-delay:calc(var(--d, 0s) + .45s); }
+.kit-note{ margin:36px auto 0; width:fit-content; max-width:100%; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:10px 14px; padding:16px 24px; border-radius:20px; background:var(--green-50); box-shadow:inset 0 0 0 2px rgba(67,176,42,.35); font-weight:600; color:var(--navy); text-align:center; }
+.kit-note b{ font:800 22px/1 var(--font-head); color:var(--blue); }
+@media (max-width:860px){ .kit{ grid-template-columns:1fr 1fr; } }
+@media (max-width:400px){ .kit{ gap:12px; } .kit-ico{ width:84px; height:84px; } .kit-ico .i{ width:42px; height:42px; } .kit-item{ padding:26px 12px 20px; } }
+
+/* ============ How it works ============ */
+.steps{ position:relative; padding-top:64px; --p:0; }
+.track-line{ position:absolute; top:calc(64px + 29px); left:calc(12.5% - 7.5px); right:calc(12.5% - 7.5px); height:4px; margin-top:-2px; border-radius:4px; background:var(--blue-100); }
+.track-fill{ position:absolute; inset:0; border-radius:inherit; background:linear-gradient(90deg,var(--blue),var(--green)); transform-origin:left; transform:scaleX(var(--p)); }
+.track-mover{ position:absolute; inset:0; transform:translateX(calc(var(--p) * 100%)); }
+.track-rider{ position:absolute; left:0; bottom:34px; width:84px; max-width:none; margin-left:-46px; transform-origin:60% 92%; animation:bob 2.4s ease-in-out infinite; }
+.track-head{ display:none; }
+.step-list{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.step{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+.step-dot{ position:relative; z-index:1; width:58px; height:58px; border-radius:50%; display:grid; place-items:center; background:#fff; border:3px solid var(--blue-100); color:var(--blue); font:800 20px/1 var(--font-head); transition:background-color .45s var(--ease), color .45s, border-color .45s, transform .45s var(--ease), box-shadow .45s; }
+.step.on .step-dot{ background:var(--blue); border-color:var(--blue); color:#fff; transform:scale(1.07); box-shadow:0 0 0 8px rgba(15,76,129,.12); }
+.step-body{ margin-top:20px; padding:22px 20px; border-radius:22px; background:#fff; box-shadow:0 1px 0 var(--line), 0 18px 38px -28px rgba(8,44,78,.4); transition:transform .5s var(--ease), box-shadow .5s; }
+.step.on .step-body{ transform:translateY(-4px); box-shadow:0 1px 0 var(--line), 0 26px 46px -26px rgba(8,44,78,.5); }
+.step-body .i{ width:30px; height:30px; color:var(--green-600); margin:0 auto 10px; display:block; }
+.step h3{ font-size:18px; color:var(--navy); margin-bottom:6px; }
+.step p{ margin:0; color:var(--muted); font-size:15px; }
+@media (max-width:760px){
+  .steps{ padding-top:0; }
+  .track-line{ top:29px; bottom:auto; left:27px; right:auto; width:4px; height:auto; margin:0; }
+  .track-fill{ transform-origin:top; transform:scaleY(var(--p)); }
+  .track-mover{ transform:translateY(calc(var(--p) * 100%)); }
+  .track-rider{ display:none; }
+  .track-head{ display:block; position:absolute; left:50%; top:0; width:18px; height:18px; margin:-9px 0 0 -9px; border-radius:50%; background:var(--green); box-shadow:0 0 0 6px rgba(67,176,42,.25); }
+  .step-list{ grid-template-columns:1fr; gap:22px; }
+  .step{ flex-direction:row; align-items:flex-start; text-align:left; gap:16px; }
+  .step-body{ margin-top:0; flex:1; padding:18px; }
+  .step-body .i{ margin:0 0 8px; }
+}
+
+/* ============ Prices ============ */
+.prices{ color:#fff; overflow:hidden; background:radial-gradient(1100px 520px at 85% -10%, rgba(67,176,42,.28), transparent 60%), linear-gradient(160deg, var(--blue) 0%, var(--navy) 100%); }
+.prices::before{
+  content:""; position:absolute; inset:-50% -10%; pointer-events:none;
+  background:repeating-linear-gradient(115deg, rgba(255,255,255,.035) 0 2px, transparent 2px 46px);
+  animation:lines 18s linear infinite;
+}
+@keyframes lines{ to{ transform:translateX(-98px); } }
+.prices .container{ position:relative; }
+.prices .title{ color:#fff; }
+.prices .sub{ color:rgba(255,255,255,.85); }
+.prices .kicker{ color:var(--green-light); }
+.plans{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; }
+.plan{ position:relative; overflow:hidden; display:flex; flex-direction:column; padding:30px 22px 24px; border-radius:26px; background:#fff; color:var(--ink); }
+.plan::before{ content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(280px circle at var(--mx, 50%) var(--my, 0%), rgba(67,176,42,.16), transparent 62%); opacity:0; transition:opacity .35s; }
+.plan:hover::before{ opacity:1; }
+html.js .plan.reveal.done:hover{ transform:translateY(-8px); box-shadow:0 34px 60px -26px rgba(0,0,0,.55); }
+.plan .bar{ position:absolute; top:0; left:0; right:0; height:6px; background:linear-gradient(90deg,var(--blue),var(--green)); transform-origin:left; transform:scaleX(0); transition:transform 1s var(--ease) .25s; }
+.plan.in .bar, html:not(.js) .plan .bar{ transform:scaleX(1); }
+.plan h3{ position:relative; font-size:22px; color:var(--navy); }
+.plan .days{ position:relative; font-size:14px; color:var(--muted); min-height:1.6em; }
+.plan .price{ position:relative; display:flex; align-items:baseline; flex-wrap:wrap; gap:6px; margin:14px 0 4px; }
+.plan .price b{ white-space:nowrap; font:800 clamp(26px,2.3vw,34px)/1 var(--font-head); color:var(--blue); letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
+.plan .price span{ font-weight:700; color:var(--blue); white-space:nowrap; }
+.formula{ position:relative; margin:0 0 18px; padding-bottom:18px; border-bottom:1px dashed var(--line); font-size:14px; color:var(--muted); }
+.plan ul{ position:relative; list-style:none; margin:0 0 24px; padding:0; display:grid; gap:10px; font-size:15px; }
+.plan li{ display:flex; align-items:center; gap:10px; }
+.plan li .i{ width:18px; height:18px; color:var(--green-600); stroke-width:3; }
+.plan .btn{ position:relative; margin-top:auto; width:100%; }
+@media (max-width:1060px){ .plans{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .plans{ grid-template-columns:1fr; } }
+
+.calc{ margin-top:22px; display:grid; grid-template-columns:1.5fr 1fr; gap:28px; align-items:center; padding:28px; border-radius:26px; background:rgba(255,255,255,.08); box-shadow:inset 0 0 0 1px rgba(255,255,255,.16); }
+.calc h3{ font-size:22px; color:#fff; margin-bottom:4px; }
+.calc p{ margin:0 0 22px; color:rgba(255,255,255,.8); font-size:15px; }
+.range{ --fill:0%; -webkit-appearance:none; appearance:none; width:100%; height:10px; border-radius:10px; outline-offset:6px; cursor:pointer; background:linear-gradient(90deg, var(--green) var(--fill), rgba(255,255,255,.2) var(--fill)); }
+.range::-webkit-slider-thumb{ -webkit-appearance:none; width:30px; height:30px; border-radius:50%; background:#fff; border:6px solid var(--green); box-shadow:0 6px 16px rgba(0,0,0,.35); transition:transform .25s var(--ease); }
+.range:active::-webkit-slider-thumb{ transform:scale(1.15); }
+.range::-moz-range-thumb{ width:18px; height:18px; border-radius:50%; background:#fff; border:6px solid var(--green); box-shadow:0 6px 16px rgba(0,0,0,.35); }
+.range::-moz-range-track{ background:transparent; }
+.ticks{ position:relative; height:34px; margin-top:12px; }
+.ticks button{ position:absolute; top:0; translate:-50% 0; border:0; cursor:pointer; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,.1); color:#fff; font:700 13px/1 var(--font-head); transition:background-color .3s; }
+.ticks button:hover, .ticks button[aria-pressed="true"]{ background:var(--green); color:var(--navy); }
+.calc-out{ text-align:right; }
+.calc-days{ font-weight:600; color:rgba(255,255,255,.85); }
+.calc-total{ font:800 clamp(34px,4.4vw,50px)/1.1 var(--font-head); color:#fff; letter-spacing:-.02em; font-variant-numeric:tabular-nums; }
+.calc-total small{ font-size:.42em; color:var(--green-light); margin-left:6px; letter-spacing:0; }
+.note{ display:flex; align-items:center; gap:10px; margin:22px 0 0; font-size:15px; color:rgba(255,255,255,.85); }
+.note .i{ color:var(--green-light); }
+@media (max-width:760px){ .calc{ grid-template-columns:1fr; padding:22px; } .calc-out{ text-align:left; } }
+
+/* ============ Yandex partnership ============ */
+.ya{ display:grid; grid-template-columns:1fr 1.05fr; gap:48px; align-items:center; }
+.ya-art{ border-radius:28px; overflow:hidden; background:#fff; box-shadow:0 1px 0 var(--line), 0 30px 60px -36px rgba(8,44,78,.45); }
+.ya-art svg{ display:block; width:100%; height:auto; }
+.route-draw{ stroke-dasharray:1; stroke-dashoffset:1; animation:routeDraw 4s linear infinite; }
+@keyframes routeDraw{ 0%{ stroke-dashoffset:1; opacity:1; } 70%{ stroke-dashoffset:0; opacity:1; } 92%{ stroke-dashoffset:0; opacity:1; } 100%{ stroke-dashoffset:0; opacity:0; } }
+.pin-pulse{ transform-box:fill-box; transform-origin:center; animation:pinPulse 2s var(--ease) infinite; }
+@keyframes pinPulse{ from{ transform:scale(.6); opacity:.6; } to{ transform:scale(2.2); opacity:0; } }
+.ya-points{ list-style:none; margin:26px 0 30px; padding:0; display:grid; gap:12px; }
+.ya-points li{ display:flex; gap:12px; align-items:flex-start; font-weight:500; }
+.ya-points .i{ width:22px; height:22px; color:var(--green-600); stroke-width:3; margin-top:2px; }
+@media (max-width:900px){ .ya{ grid-template-columns:1fr; gap:32px; } }
+
+/* ============ FAQ ============ */
+.faq-wrap{ display:grid; grid-template-columns:.85fr 1.15fr; gap:48px; align-items:start; }
+.faq-cta{ margin-top:28px; padding:26px; border-radius:24px; background:linear-gradient(135deg,var(--blue),var(--navy)); color:#fff; }
+.faq-cta h3{ font-size:20px; margin-bottom:6px; }
+.faq-cta p{ margin:0 0 18px; color:rgba(255,255,255,.85); }
+.faq-list{ display:grid; gap:12px; }
+.qa{ border-radius:20px; background:#fff; box-shadow:0 1px 0 var(--line), 0 14px 30px -26px rgba(8,44,78,.45); transition:box-shadow .4s; }
+.qa[data-open]{ box-shadow:0 1px 0 var(--line), 0 24px 44px -28px rgba(8,44,78,.55); }
+.qa button{ width:100%; display:flex; align-items:center; justify-content:space-between; gap:16px; padding:20px 22px; border:0; background:none; text-align:left; cursor:pointer; font:700 17px/1.35 var(--font-head); color:var(--navy); }
+.chev{ width:34px; height:34px; flex:none; border-radius:50%; display:grid; place-items:center; background:var(--blue-50); color:var(--blue); transition:transform .45s var(--ease), background-color .3s, color .3s; }
+.chev .i{ width:18px; height:18px; stroke-width:2.6; }
+.qa[data-open] .chev{ transform:rotate(180deg); background:var(--blue); color:#fff; }
+.ans{ display:grid; grid-template-rows:0fr; transition:grid-template-rows .5s var(--ease); }
+.qa[data-open] .ans{ grid-template-rows:1fr; }
+.ans > div{ overflow:hidden; visibility:hidden; transition:visibility .5s; }
+.qa[data-open] .ans > div{ visibility:visible; }
+.ans p{ margin:0; padding:0 22px 22px; color:var(--muted); }
+.ans a{ color:var(--blue); font-weight:600; }
+@media (max-width:900px){ .faq-wrap{ grid-template-columns:1fr; gap:28px; } }
+
+/* ============ Contact ============ */
+.contact-card{ position:relative; display:grid; grid-template-columns:1.1fr 1fr; overflow:hidden; border-radius:34px; color:#fff; background:linear-gradient(135deg, var(--blue) 0%, var(--navy) 100%); box-shadow:0 44px 90px -46px rgba(8,44,78,.75); }
+.contact-info{ position:relative; padding:clamp(28px,5vw,58px); }
+.contact-info .title{ color:#fff; }
+.contact-info .kicker{ color:var(--green-light); }
+.contact-info .sub{ color:rgba(255,255,255,.86); }
+.contact-info .speedbg{ position:absolute; right:-40px; bottom:24px; width:60%; height:120px; pointer-events:none; opacity:.5; }
+.contact-info .speedbg i{ position:absolute; right:0; height:5px; border-radius:5px; background:linear-gradient(90deg, transparent, rgba(166,231,148,.55)); animation:streak 2.4s linear infinite; opacity:0; }
+.contact-info .speedbg i:nth-child(1){ top:10%; width:70%; }
+.contact-info .speedbg i:nth-child(2){ top:45%; width:50%; animation-delay:.8s; }
+.contact-info .speedbg i:nth-child(3){ top:80%; width:85%; animation-delay:1.6s; }
+.ci-list{ position:relative; display:grid; gap:12px; margin:28px 0 30px; }
+.ci{ display:flex; align-items:center; gap:14px; text-decoration:none; padding:12px; margin:0 -12px; border-radius:16px; transition:background-color .3s; }
+a.ci:hover{ background:rgba(255,255,255,.07); }
+.ci .c-ico{ width:48px; height:48px; flex:none; border-radius:15px; display:grid; place-items:center; background:rgba(255,255,255,.1); color:var(--green-light); }
+.ci small{ display:block; font-size:13px; opacity:.72; }
+.ci b{ display:block; font-weight:600; font-size:17px; line-height:1.35; }
+.open-tag{ display:inline-flex; align-items:center; gap:8px; margin-left:8px; padding:3px 10px; border-radius:999px; background:rgba(255,255,255,.12); font-size:13px; font-weight:600; vertical-align:middle; }
+.contact-info .cta-row{ position:relative; }
+.map{ position:relative; min-height:420px; background:radial-gradient(circle at 50% 46%, rgba(67,176,42,.18) 0 60px, transparent 61px), linear-gradient(var(--blue-100) 2px, transparent 2px) 0 0/48px 48px, linear-gradient(90deg, var(--blue-100) 2px, transparent 2px) 0 0/48px 48px, var(--blue-50); }
+.map-pin{ position:absolute; left:50%; top:46%; width:56px; height:56px; margin:-28px 0 0 -28px; border-radius:50%; display:grid; place-items:center; background:var(--blue); color:#fff; box-shadow:0 14px 30px -10px rgba(8,44,78,.6); animation:float 3s ease-in-out infinite; }
+.map-pin .i{ width:28px; height:28px; }
+.map iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+.map-link{ position:absolute; left:16px; bottom:16px; z-index:1; padding:11px 16px; font-size:14px; }
+@media (max-width:900px){ .contact-card{ grid-template-columns:1fr; border-radius:28px; } .map{ min-height:300px; } }
+
+/* ============ Footer + FAB ============ */
+.footer{ padding:36px 0 40px; background:#fff; border-top:1px solid var(--line); }
+.foot{ display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:18px 28px; }
+.foot img{ height:38px; width:auto; }
+.foot p{ margin:0; font-size:14px; color:var(--muted); }
+.foot-links{ display:flex; flex-wrap:wrap; gap:10px 22px; font-weight:600; color:var(--navy); }
+.foot-links a{ text-decoration:none; display:inline-flex; align-items:center; gap:8px; }
+.foot-links a:hover{ color:var(--blue); }
+.fab{ display:none; }
+@media (max-width:980px){
+  .footer{ padding-bottom:110px; }
+  .fab{
+    display:grid; place-items:center; position:fixed; right:16px; bottom:calc(16px + env(safe-area-inset-bottom)); z-index:45;
+    width:62px; height:62px; border-radius:50%; background:var(--green); color:var(--navy);
+    box-shadow:0 16px 32px -10px rgba(67,176,42,.85);
+    transform:translateY(140px); transition:transform .55s var(--ease);
+  }
+  .fab.show{ transform:none; }
+  .fab .i{ width:28px; height:28px; }
+  .fab::before{ content:""; position:absolute; inset:0; border-radius:50%; background:var(--green); animation:fabPing 2.2s var(--ease) infinite; z-index:-1; }
+  @keyframes fabPing{ from{ transform:scale(1); opacity:.55; } to{ transform:scale(1.55); opacity:0; } }
+}
+
+/* pause decorative loops while their section is off-screen */
+.is-off, .is-off *{ animation-play-state:paused !important; }
+
+/* ============ Reduced motion ============ */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *, *::before, *::after{ animation-duration:.001ms !important; animation-delay:0s !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; transition-delay:0s !important; }
+  html.js .reveal{ opacity:1; transform:none; }
+  .route-draw{ stroke-dashoffset:0; }
+}
+</style>
+</head>
+<body>
+
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2" y="7" width="16" height="10" rx="2"/><path d="M22 11v2M6 11v2M10 11v2"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2"/><path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+  <symbol id="i-helmet" viewBox="0 0 24 24"><path d="M3.5 17a8.5 8.5 0 0 1 17 0v1.5h-17z"/><path d="M12 12.5h8.2M12 12.5v6"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-scooter" viewBox="0 0 24 24"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M8 17h6.5L17 6h-3"/><path d="M3 11h7l1.5 6"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-id" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M15 8h2M15 12h2M7 16h10"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-go" viewBox="0 0 24 24"><path d="M3 11 22 2l-9 19-2-8-8-2z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+  <symbol id="i-office" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+</svg>
+
+<div class="intro-ov" aria-hidden="true">
+  <div class="intro-inner">
+    <img class="intro-rider" src="assets/logo-rider.webp" alt="" width="569" height="369">
+    <img class="intro-word" src="assets/logo-word.webp" alt="" width="440" height="131">
+    <span class="intro-line"></span>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container">
+    <a class="brand" href="#top" aria-label="Firali Cargo"><img src="assets/logo-word.webp" alt="Firali Cargo" width="440" height="131"></a>
+    <nav class="nav-links" id="navLinks" aria-label="Menu">
+      <a href="#benefits" data-i18n="nav.benefits">Afzalliklar</a>
+      <a href="#how" data-i18n="nav.how">Qanday ishlaydi</a>
+      <a href="#prices" data-i18n="nav.prices">Narxlar</a>
+      <a href="#faq" data-i18n="nav.faq">Savollar</a>
+      <a href="#contact" data-i18n="nav.contact">Aloqa</a>
+    </nav>
+    <div class="lang" id="lang" data-lang="uz" role="group" aria-label="Til / Язык">
+      <span class="pill"></span>
+      <button type="button" data-lang="uz" aria-pressed="true">UZ</button>
+      <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+    </div>
+    <a class="btn btn-primary nav-call" href="tel:+998904888788" aria-label="+998 90 488-87-88"><svg class="i"><use href="#i-phone"/></svg><span>+998 90 488-87-88</span></a>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" data-i18n-aria="nav.menu" aria-label="Menyu">
+      <svg class="i i-menu"><use href="#i-menu"/></svg><svg class="i i-close"><use href="#i-x"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top" data-anim>
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="container">
+      <div class="hero-copy">
+        <div class="status fx" id="status" style="--d:0s">
+          <span class="dot"></span>
+          <span data-i18n="hero.city">Toshkent</span>
+          <span class="sep"></span>
+          <span id="statusText">9:00 – 21:00</span>
+        </div>
+        <h1 id="heroTitle">
+          <span class="l1" data-i18n="hero.t1">Kuryerlar uchun</span>
+          <span class="l2"><span data-i18n="hero.t2">elektr skuter ijarasi</span><svg class="swoosh" viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M3 15 C 80 3, 200 3, 297 11"/></svg></span>
+        </h1>
+        <p class="lead fx" style="--d:.45s" data-i18n="hero.lead">Har bir skuterda 2 ta batareya, bepul kaska va 2 ta zaryadlovchi. Batareya tugasa yoki skuter buzilsa — oʻzimiz tezda yetib boramiz.</p>
+        <div class="price-pill fx" style="--d:.6s">
+          <span data-i18n="hero.priceA">Kuniga atigi</span>
+          <b data-price="1">39 500</b>
+          <span class="cur" data-i18n="cur">soʻm</span>
+          <span data-i18n="hero.priceB"></span>
+        </div>
+        <div class="cta-row fx" style="--d:.75s">
+          <a class="btn btn-primary" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.call">Qoʻngʻiroq qilish</span></a>
+          <a class="btn btn-ghost" href="https://ig.me/m/firalicargo" target="_blank" rel="noopener"><svg class="i"><use href="#i-insta"/></svg><span data-i18n="cta.insta">Instagramʼda yozish</span></a>
+        </div>
+        <ul class="trust fx" style="--d:.9s">
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="trust.1">2 ta batareya</span></li>
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="trust.2">Bepul kaska</span></li>
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="trust.3">Yandex rasmiy hamkori</span></li>
+        </ul>
+      </div>
+
+      <div class="stage" id="stage" aria-hidden="true">
+        <div class="layer ring" style="--depth:6">
+          <svg viewBox="0 0 400 400"><circle cx="200" cy="200" r="190" stroke="#0F4C81" stroke-opacity=".28" stroke-width="3" stroke-dasharray="2 14"/><circle cx="200" cy="200" r="160" stroke="#43B02A" stroke-opacity=".35" stroke-width="3" stroke-dasharray="60 30 8 30"/></svg>
+        </div>
+        <div class="glow"></div>
+        <div class="layer speed" style="--depth:18"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="shadow"></div>
+        <div class="road"><div class="road-lines"></div></div>
+        <div class="layer rider-wrap" style="--depth:10">
+          <div class="rider-in"><img class="rider" src="assets/logo-rider.webp" alt="" width="569" height="369" fetchpriority="high"></div>
+        </div>
+        <div class="layer chip-1"><div class="chip"><svg class="i"><use href="#i-battery"/></svg><span data-i18n="chip.1">2× batareya</span></div></div>
+        <div class="layer chip-2"><div class="chip"><svg class="i"><use href="#i-helmet"/></svg><span data-i18n="chip.2">Bepul kaska</span></div></div>
+        <div class="layer chip-3"><div class="chip"><svg class="i"><use href="#i-clock"/></svg><span>9:00 – 21:00</span></div></div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats" aria-label="Firali Cargo" data-anim>
+    <div class="container">
+      <div class="stat reveal" style="--d:0s"><b><span data-count="40">40</span></b><span data-i18n="stat.1">elektr skuter</span></div>
+      <div class="stat reveal" style="--d:.1s"><b><span data-count="2">2</span><small>×</small></b><span data-i18n="stat.2">batareya har skuterda</span></div>
+      <div class="stat reveal" style="--d:.2s"><b><span data-count="12">12</span><small data-i18n="stat.h">soat</small></b><span data-i18n="stat.3">ish vaqti: 9:00 – 21:00</span></div>
+      <div class="stat reveal" style="--d:.3s"><b><span data-count="39500" data-price="1">39 500</span></b><span data-i18n="stat.4">soʻm — 1 kunlik ijara</span></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="bands" aria-hidden="true" data-anim>
+    <div class="band band-blue"><div class="track"></div></div>
+    <div class="band band-green"><div class="track"></div></div>
+  </div>
+
+  <!-- ============ BENEFITS ============ -->
+  <section class="section" id="benefits" data-anim>
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker" data-i18n="ben.kicker">Afzalliklar</span>
+        <h2 class="title" data-i18n="ben.title">Nega aynan Firali Cargo?</h2>
+        <p class="sub" data-i18n="ben.sub">Siz yetkazib berasiz — qolganini biz oʻylaymiz.</p>
+      </div>
+      <div class="ben-grid">
+        <article class="card wide tilt reveal" style="--d:0s">
+          <div>
+            <span class="num">01</span>
+            <div class="ico"><svg class="i"><use href="#i-bolt"/></svg></div>
+            <h3 data-i18n="b1.t">Batareya tugadimi? Oʻzimiz olib boramiz</h3>
+            <p data-i18n="b1.d">Batareya tugasa yoki skuter buzilsa — qoʻngʻiroq qiling, biz tezda yetib boramiz. Ishingiz toʻxtab qolmaydi.</p>
+          </div>
+          <div class="route" aria-hidden="true">
+            <div class="pin"><span class="p-ico"><svg class="i"><use href="#i-office"/></svg></span>Firali Cargo</div>
+            <div class="path"><div class="mover"><span class="pack"><svg class="i"><use href="#i-battery"/></svg></span></div></div>
+            <div class="pin to"><span class="p-ico"><svg class="i"><use href="#i-user"/></svg></span><span data-i18n="b1.you">Siz</span></div>
+          </div>
+        </article>
+        <article class="card tilt reveal" style="--d:.1s">
+          <span class="num">02</span>
+          <div class="batts" aria-hidden="true"><span class="batt"><i></i></span><span class="batt"><i></i></span></div>
+          <h3 data-i18n="b2.t">2 ta batareya</h3>
+          <p data-i18n="b2.d">Har bir skuterda 2 ta batareya — kun boʻyi ishlang.</p>
+        </article>
+        <article class="card tilt reveal" style="--d:0s">
+          <span class="num">03</span>
+          <div class="ico"><svg class="i"><use href="#i-helmet"/></svg></div>
+          <h3 data-i18n="b3.t">Kaska va zaryadlovchilar bepul</h3>
+          <p data-i18n="b3.d">Kaska va 2 ta zaryadlovchi ijaraga kiradi — qoʻshimcha toʻlovsiz.</p>
+        </article>
+        <article class="card tilt reveal" style="--d:.1s">
+          <span class="num">04</span>
+          <div class="ico"><svg class="i wrench"><use href="#i-wrench"/></svg></div>
+          <h3 data-i18n="b4.t">Texnik yordam</h3>
+          <p data-i18n="b4.d">Skuter bilan savol yoki muammo boʻlsa — bizga murojaat qiling.</p>
+        </article>
+        <article class="card tilt reveal" style="--d:.2s">
+          <span class="num">05</span>
+          <div class="ico"><svg class="i"><use href="#i-badge"/></svg></div>
+          <h3 data-i18n="b5.t">Yandex rasmiy hamkori</h3>
+          <p data-i18n="b5.d">Firali Cargo Yandex bilan rasmiy hamkorlikda ishlaydi.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KIT ============ -->
+  <section class="section white" id="kit">
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="kicker" data-i18n="kit.kicker">Toʻplam</span>
+        <h2 class="title" data-i18n="kit.title">Ijaraga nimalar kiradi?</h2>
+      </div>
+      <div class="kit">
+        <div class="kit-item tilt reveal pop" style="--d:0s"><span class="qty">×1</span><div class="kit-ico"><svg class="i"><use href="#i-scooter"/></svg></div><h3 data-i18n="kit.1">Elektr skuter</h3><p data-i18n="kit.1d">Oʻrindiqli</p></div>
+        <div class="kit-item tilt reveal pop" style="--d:.12s"><span class="qty">×2</span><div class="kit-ico"><svg class="i"><use href="#i-battery"/></svg></div><h3 data-i18n="kit.2">Batareya</h3><p data-i18n="kit.2d">Kun boʻyi ishlash uchun</p></div>
+        <div class="kit-item tilt reveal pop" style="--d:.24s"><span class="qty">×2</span><div class="kit-ico"><svg class="i"><use href="#i-plug"/></svg></div><h3 data-i18n="kit.3">Zaryadlovchi</h3><p data-i18n="kit.3d">Bepul</p></div>
+        <div class="kit-item tilt reveal pop" style="--d:.36s"><span class="qty">×1</span><div class="kit-ico"><svg class="i"><use href="#i-helmet"/></svg></div><h3 data-i18n="kit.4">Kaska</h3><p data-i18n="kit.4d">Bepul</p></div>
+      </div>
+      <div class="kit-note reveal" style="--d:.2s">
+        <span data-i18n="kit.note">Hammasi bitta narxda —</span>
+        <span><span data-i18n="hero.priceA2">kuniga</span> <b data-price="1">39 500</b> <span data-i18n="cur">soʻm</span> <span data-i18n="hero.priceB"></span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section tint" id="how" data-anim>
+    <div class="container">
+      <div class="sec-head center reveal">
+        <span class="kicker" data-i18n="how.kicker">Qanday ishlaydi</span>
+        <h2 class="title" data-i18n="how.title">4 qadamda yoʻlga chiqing</h2>
+      </div>
+      <div class="steps" id="steps">
+        <div class="track-line" aria-hidden="true">
+          <div class="track-fill"></div>
+          <div class="track-mover"><img class="track-rider" src="assets/logo-rider.webp" alt="" width="569" height="369" loading="lazy"><span class="track-head"></span></div>
+        </div>
+        <ol class="step-list">
+          <li class="step reveal" style="--d:0s"><span class="step-dot">1</span><div class="step-body"><svg class="i"><use href="#i-msg"/></svg><h3 data-i18n="s1.t">Bogʻlaning</h3><p data-i18n="s1.d">Qoʻngʻiroq qiling yoki Instagramʼda yozing.</p></div></li>
+          <li class="step reveal" style="--d:.1s"><span class="step-dot">2</span><div class="step-body"><svg class="i"><use href="#i-id"/></svg><h3 data-i18n="s2.t">Ofisga keling</h3><p data-i18n="s2.d">Pasport yoki ID-kartangizni olib keling.</p></div></li>
+          <li class="step reveal" style="--d:.2s"><span class="step-dot">3</span><div class="step-body"><svg class="i"><use href="#i-doc"/></svg><h3 data-i18n="s3.t">Shartnoma</h3><p data-i18n="s3.d">Ijara shartnomasini imzolaymiz va skuterni dalolatnoma bilan topshiramiz.</p></div></li>
+          <li class="step reveal" style="--d:.3s"><span class="step-dot">4</span><div class="step-body"><svg class="i"><use href="#i-go"/></svg><h3 data-i18n="s4.t">Ishni boshlang</h3><p data-i18n="s4.d">Skuter, 2 ta batareya, zaryadlovchilar va kaska — yoʻlga chiqing!</p></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICES ============ -->
+  <section class="section prices" id="prices" data-anim>
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="kicker" data-i18n="pr.kicker">Narxlar</span>
+        <h2 class="title" data-i18n="pr.title">Oddiy va shaffof narx</h2>
+        <p class="sub" data-i18n="pr.sub">Kuniga <span data-price="1">39 500</span> soʻm — qancha kunga olsangiz, shuncha toʻlaysiz.</p>
+      </div>
+      <div class="plans">
+        <article class="plan reveal" data-days="1" style="--d:0s">
+          <span class="bar"></span>
+          <h3 data-i18n="plan.1">1 kun</h3>
+          <span class="days" data-days-label></span>
+          <div class="price"><b data-count="39500" data-plan-total>39 500</b><span data-i18n="cur">soʻm</span></div>
+          <p class="formula" data-formula>Kunlik narx</p>
+          <ul>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.1">2 ta batareya</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.2">2 ta zaryadlovchi</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.3">Kaska</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.4">Texnik yordam</span></li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.book">Band qilish</span></a>
+        </article>
+        <article class="plan reveal" data-days="7" style="--d:.1s">
+          <span class="bar"></span>
+          <h3 data-i18n="plan.7">1 hafta</h3>
+          <span class="days" data-days-label>7 kun</span>
+          <div class="price"><b data-count="276500" data-plan-total>276 500</b><span data-i18n="cur">soʻm</span></div>
+          <p class="formula" data-formula>39 500 × 7 kun</p>
+          <ul>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.1">2 ta batareya</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.2">2 ta zaryadlovchi</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.3">Kaska</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.4">Texnik yordam</span></li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.book">Band qilish</span></a>
+        </article>
+        <article class="plan reveal" data-days="14" style="--d:.2s">
+          <span class="bar"></span>
+          <h3 data-i18n="plan.14">2 hafta</h3>
+          <span class="days" data-days-label>14 kun</span>
+          <div class="price"><b data-count="553000" data-plan-total>553 000</b><span data-i18n="cur">soʻm</span></div>
+          <p class="formula" data-formula>39 500 × 14 kun</p>
+          <ul>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.1">2 ta batareya</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.2">2 ta zaryadlovchi</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.3">Kaska</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.4">Texnik yordam</span></li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.book">Band qilish</span></a>
+        </article>
+        <article class="plan reveal" data-days="30" style="--d:.3s">
+          <span class="bar"></span>
+          <h3 data-i18n="plan.30">1 oy</h3>
+          <span class="days" data-days-label>30 kun</span>
+          <div class="price"><b data-count="1185000" data-plan-total>1 185 000</b><span data-i18n="cur">soʻm</span></div>
+          <p class="formula" data-formula>39 500 × 30 kun</p>
+          <ul>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.1">2 ta batareya</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.2">2 ta zaryadlovchi</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.3">Kaska</span></li>
+            <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="inc.4">Texnik yordam</span></li>
+          </ul>
+          <a class="btn btn-primary" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.book">Band qilish</span></a>
+        </article>
+      </div>
+
+      <div class="calc reveal" style="--d:.1s">
+        <div>
+          <h3 data-i18n="calc.title">Kalkulyator: necha kunga kerak?</h3>
+          <p data-i18n="calc.sub">Slayderni suring yoki muddatni tanlang.</p>
+          <label class="sr-only" for="calcRange" data-i18n="calc.label">Kunlar soni</label>
+          <input class="range" id="calcRange" type="range" min="1" max="30" step="1" value="7">
+          <div class="ticks" id="ticks">
+            <button type="button" data-v="1" style="left:0%">1</button>
+            <button type="button" data-v="7">7</button>
+            <button type="button" data-v="14">14</button>
+            <button type="button" data-v="30" style="left:100%">30</button>
+          </div>
+        </div>
+        <div class="calc-out" aria-live="polite">
+          <div class="calc-days" id="calcDays">7 kun</div>
+          <div class="calc-total"><span id="calcTotal">276 500</span><small data-i18n="cur">soʻm</small></div>
+        </div>
+      </div>
+      <p class="note reveal"><svg class="i"><use href="#i-info"/></svg><span data-i18n="pr.deposit">Depozit shartlarini telefon orqali aniqlang.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ YANDEX ============ -->
+  <section class="section white" id="partner" data-anim>
+    <div class="container ya">
+      <div class="reveal">
+        <span class="kicker" data-i18n="ya.kicker">Hamkorlik</span>
+        <h2 class="title" style="margin-top:14px" data-i18n="ya.title">Yandex bilan rasmiy hamkorlik</h2>
+        <ul class="ya-points">
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ya.1">Firali Cargo — Yandexʼning rasmiy hamkori.</span></li>
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ya.2">Skuterimiz bilan yetkazib berish ishini boshlang.</span></li>
+          <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="ya.3">Batafsil maʼlumot uchun bizga qoʻngʻiroq qiling.</span></li>
+        </ul>
+        <a class="btn btn-green" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="ya.cta">Batafsil soʻrash</span></a>
+      </div>
+      <div class="ya-art reveal" style="--d:.15s" aria-hidden="true">
+        <svg class="smil" viewBox="0 0 520 340" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="520" height="340" fill="#F6F9FC"/>
+          <g fill="#E3ECF5">
+            <rect x="20" y="20" width="120" height="80" rx="14"/><rect x="160" y="20" width="150" height="80" rx="14"/><rect x="330" y="20" width="170" height="80" rx="14"/>
+            <rect x="20" y="120" width="80" height="90" rx="14"/><rect x="120" y="120" width="130" height="90" rx="14"/><rect x="270" y="120" width="110" height="90" rx="14"/><rect x="400" y="120" width="100" height="90" rx="14"/>
+            <rect x="20" y="230" width="150" height="90" rx="14"/><rect x="190" y="230" width="140" height="90" rx="14"/><rect x="350" y="230" width="150" height="90" rx="14"/>
+          </g>
+          <path id="yaRoute" d="M60 275 C 150 275, 165 215, 260 215 S 360 110, 450 70" fill="none" stroke="#DCE8F4" stroke-width="14" stroke-linecap="round"/>
+          <path class="route-draw" pathLength="1" d="M60 275 C 150 275, 165 215, 260 215 S 360 110, 450 70" fill="none" stroke="#43B02A" stroke-width="7" stroke-linecap="round"/>
+          <circle class="pin-pulse" cx="450" cy="70" r="16" fill="#43B02A"/>
+          <circle cx="450" cy="70" r="16" fill="#43B02A" stroke="#fff" stroke-width="5"/>
+          <circle cx="60" cy="275" r="20" fill="#0F4C81" stroke="#fff" stroke-width="5"/>
+          <text x="60" y="282" text-anchor="middle" font-family="Montserrat, sans-serif" font-weight="800" font-style="italic" font-size="19" fill="#fff">F</text>
+          <g>
+            <circle r="13" fill="#fff" stroke="#0F4C81" stroke-width="5"/>
+            <animateMotion dur="4s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.7;1" calcMode="linear">
+              <mpath href="#yaRoute" xlink:href="#yaRoute"/>
+            </animateMotion>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container faq-wrap">
+      <div class="reveal">
+        <div class="sec-head" style="margin-bottom:0">
+          <span class="kicker" data-i18n="faq.kicker">Savollar</span>
+          <h2 class="title" data-i18n="faq.title">Koʻp beriladigan savollar</h2>
+        </div>
+        <div class="faq-cta">
+          <h3 data-i18n="faq.cta.t">Savolingiz qoldimi?</h3>
+          <p data-i18n="faq.cta.d">Qoʻngʻiroq qiling — 9:00 dan 21:00 gacha javob beramiz.</p>
+          <a class="btn btn-green" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg>+998 90 488-87-88</a>
+        </div>
+      </div>
+      <div class="faq-list">
+        <div class="qa reveal" style="--d:0s"><button type="button" aria-expanded="false" aria-controls="a1" id="q1"><span data-i18n="q1">Batareya tugasa nima qilaman?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a1" role="region" aria-labelledby="q1"><div><p data-i18n="a1">Bizga qoʻngʻiroq qiling — biz oʻzimiz tezda batareya olib boramiz. Bundan tashqari, har bir skuterda 2 ta batareya bor.</p></div></div></div>
+        <div class="qa reveal" style="--d:.05s"><button type="button" aria-expanded="false" aria-controls="a2" id="q2"><span data-i18n="q2">Ijaraga nimalar kiradi?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a2" role="region" aria-labelledby="q2"><div><p data-i18n="a2">Elektr skuter, 2 ta batareya, 2 ta zaryadlovchi va kaska. Texnik yordam ham bor.</p></div></div></div>
+        <div class="qa reveal" style="--d:.1s"><button type="button" aria-expanded="false" aria-controls="a3" id="q3"><span data-i18n="q3">Narxi qancha?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a3" role="region" aria-labelledby="q3"><div><p id="faqPrice">1 kun — 39 500 soʻm, 1 hafta — 276 500 soʻm, 2 hafta — 553 000 soʻm, 1 oy (30 kun) — 1 185 000 soʻm.</p></div></div></div>
+        <div class="qa reveal" style="--d:.15s"><button type="button" aria-expanded="false" aria-controls="a4" id="q4"><span data-i18n="q4">Qanday hujjatlar kerak?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a4" role="region" aria-labelledby="q4"><div><p data-i18n="a4">Pasport yoki ID-karta. Ofisda ijara shartnomasini imzolaymiz.</p></div></div></div>
+        <div class="qa reveal" style="--d:.2s"><button type="button" aria-expanded="false" aria-controls="a5" id="q5"><span data-i18n="q5">Depozit bormi?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a5" role="region" aria-labelledby="q5"><div><p data-i18n="a5">Depozit shartlarini telefon orqali aniqlang: <a href="tel:+998904888788">+998 90 488-87-88</a>.</p></div></div></div>
+        <div class="qa reveal" style="--d:.25s"><button type="button" aria-expanded="false" aria-controls="a6" id="q6"><span data-i18n="q6">Qachon ishlaysiz?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a6" role="region" aria-labelledby="q6"><div><p data-i18n="a6">9:00 dan 21:00 gacha.</p></div></div></div>
+        <div class="qa reveal" style="--d:.3s"><button type="button" aria-expanded="false" aria-controls="a7" id="q7"><span data-i18n="q7">Yandexʼda ishlasam boʻladimi?</span><span class="chev"><svg class="i"><use href="#i-chev"/></svg></span></button><div class="ans" id="a7" role="region" aria-labelledby="q7"><div><p data-i18n="a7">Firali Cargo — Yandexʼning rasmiy hamkori. Batafsil maʼlumot uchun bizga qoʻngʻiroq qiling.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section white" id="contact" data-anim>
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="contact-info">
+          <div class="speedbg" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="sec-head" style="margin-bottom:0">
+            <span class="kicker" data-i18n="ct.kicker">Aloqa</span>
+            <h2 class="title" data-i18n="ct.title">Bugunoq yoʻlga chiqing</h2>
+            <p class="sub" data-i18n="ct.sub">Qoʻngʻiroq qiling yoki Instagramʼda yozing — barcha savollarga javob beramiz.</p>
+          </div>
+          <div class="ci-list">
+            <a class="ci" href="tel:+998904888788"><span class="c-ico"><svg class="i"><use href="#i-phone"/></svg></span><span><small data-i18n="ct.phone">Telefon</small><b>+998 90 488-87-88</b></span></a>
+            <a class="ci" href="https://instagram.com/firalicargo" target="_blank" rel="noopener"><span class="c-ico"><svg class="i"><use href="#i-insta"/></svg></span><span><small>Instagram</small><b>@firalicargo</b></span></a>
+            <div class="ci"><span class="c-ico"><svg class="i"><use href="#i-clock"/></svg></span><span><small data-i18n="ct.hours">Ish vaqti</small><b>9:00 – 21:00 <span class="open-tag" id="openTag"><span class="dot"></span><span id="openTagText"></span></span></b></span></div>
+            <div class="ci"><span class="c-ico"><svg class="i"><use href="#i-pin"/></svg></span><span><small data-i18n="ct.addr">Manzil</small><b data-i18n="ct.address">Toshkent sh., Uchtepa tumani, Tepaqoʻrgʻon MFY, 11-mavze, 43-uy, 12-xonadon</b></span></div>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-green" href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg><span data-i18n="cta.call">Qoʻngʻiroq qilish</span></a>
+            <a class="btn btn-outline-light" href="https://ig.me/m/firalicargo" target="_blank" rel="noopener"><svg class="i"><use href="#i-insta"/></svg><span data-i18n="cta.insta">Instagramʼda yozish</span></a>
+          </div>
+        </div>
+        <div class="map">
+          <span class="map-pin" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg></span>
+          <iframe title="Firali Cargo — xarita" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=Uchtepa%20tumani%2C%2011-mavze%2C%2043%2C%20Toshkent&z=15&output=embed"></iframe>
+          <a class="btn btn-white map-link" href="https://maps.google.com/?q=Uchtepa%20tumani%2C%2011-mavze%2C%2043%2C%20Toshkent" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg><span data-i18n="ct.map">Xaritada ochish</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <img src="assets/logo-word.webp" alt="Firali Cargo" width="440" height="131" loading="lazy">
+    <div class="foot-links">
+      <a href="tel:+998904888788"><svg class="i"><use href="#i-phone"/></svg>+998 90 488-87-88</a>
+      <a href="https://instagram.com/firalicargo" target="_blank" rel="noopener"><svg class="i"><use href="#i-insta"/></svg>@firalicargo</a>
+    </div>
+    <p>© <span id="year">2026</span> <span data-i18n="foot">«Firali Cargo» MChJ. Barcha huquqlar himoyalangan.</span></p>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="tel:+998904888788" data-i18n-aria="cta.call" aria-label="Qoʻngʻiroq qilish"><svg class="i"><use href="#i-phone"/></svg></a>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ================= Settings — edit prices and hours here ================= */
+  var PRICE_PER_DAY = 39500;           // so'm per day
+  var OPEN_HOUR = 9, CLOSE_HOUR = 21;  // Tashkent time (UTC+5)
+
+  var root = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var fmt = function (n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ' '); };
+  var store = {
+    get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+
+  function ruDays(n) {
+    var m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return n + ' день';
+    if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return n + ' дня';
+    return n + ' дней';
+  }
+
+  /* Text that is built in code (both languages) */
+  var DYN = {
+    uz: {
+      days: function (n) { return n + ' kun'; },
+      cur: 'soʻm',
+      dayRate: 'Kunlik narx',
+      open: 'Hozir ochiq',
+      closed: 'Hozir yopiq · 9:00 da ochamiz',
+      openShort: 'Ochiq', closedShort: 'Yopiq',
+      marquee: ['Batareya tugasa — olib boramiz', 'Har skuterda 2 ta batareya', 'Bepul kaska', '2 ta zaryadlovchi', 'Texnik yordam', 'Yandex rasmiy hamkori', 'Kuniga {p} soʻm'],
+      faqPrice: function (p) { return '1 kun — ' + p(1) + ' soʻm, 1 hafta — ' + p(7) + ' soʻm, 2 hafta — ' + p(14) + ' soʻm, 1 oy (30 kun) — ' + p(30) + ' soʻm. Narxga 2 ta batareya, 2 ta zaryadlovchi, kaska va texnik yordam kiradi.'; },
+      calcAria: function (d, t) { return d + ' kun — ' + t + ' soʻm'; }
+    },
+    ru: {
+      days: ruDays,
+      cur: 'сум',
+      dayRate: 'Цена за день',
+      open: 'Сейчас открыто',
+      closed: 'Сейчас закрыто · откроемся в 9:00',
+      openShort: 'Открыто', closedShort: 'Закрыто',
+      marquee: ['Сел аккумулятор — привезём', '2 аккумулятора в каждом скутере', 'Бесплатный шлем', '2 зарядки', 'Техподдержка', 'Официальный партнёр Яндекса', '{p} сум в день'],
+      faqPrice: function (p) { return '1 день — ' + p(1) + ' сум, 1 неделя — ' + p(7) + ' сум, 2 недели — ' + p(14) + ' сум, 1 месяц (30 дней) — ' + p(30) + ' сум. В цену входят 2 аккумулятора, 2 зарядки, шлем и техподдержка.'; },
+      calcAria: function (d, t) { return ruDays(d) + ' — ' + t + ' сум'; }
+    }
+  };
+
+  /* Russian copy for every data-i18n key (Uzbek is read from the HTML itself) */
+  var RU = {
+    'meta.title': 'Firali Cargo — аренда электроскутеров для курьеров | Ташкент',
+    'nav.benefits': 'Преимущества', 'nav.how': 'Как это работает', 'nav.prices': 'Цены', 'nav.faq': 'Вопросы', 'nav.contact': 'Контакты', 'nav.menu': 'Меню',
+    'hero.city': 'Ташкент',
+    'hero.t1': 'Аренда электроскутеров',
+    'hero.t2': 'для курьеров',
+    'hero.lead': 'В каждом скутере 2 аккумулятора, бесплатный шлем и 2 зарядки. Сел аккумулятор или сломался скутер — мы быстро приедем сами.',
+    'hero.priceA': 'Всего', 'hero.priceB': 'в день', 'hero.priceA2': '',
+    'cur': 'сум',
+    'cta.call': 'Позвонить', 'cta.insta': 'Написать в Instagram', 'cta.book': 'Забронировать',
+    'trust.1': '2 аккумулятора', 'trust.2': 'Бесплатный шлем', 'trust.3': 'Официальный партнёр Яндекса',
+    'chip.1': '2× аккумулятора', 'chip.2': 'Бесплатный шлем',
+    'stat.1': 'электроскутеров', 'stat.2': 'аккумулятора в каждом скутере', 'stat.h': 'часов', 'stat.3': 'время работы: 9:00 – 21:00', 'stat.4': 'сум — аренда на 1 день',
+    'ben.kicker': 'Преимущества', 'ben.title': 'Почему Firali Cargo?', 'ben.sub': 'Вы доставляете — об остальном позаботимся мы.',
+    'b1.t': 'Сел аккумулятор? Привезём сами', 'b1.d': 'Сел аккумулятор или сломался скутер — позвоните, и мы быстро приедем. Ваша работа не остановится.', 'b1.you': 'Вы',
+    'b2.t': '2 аккумулятора', 'b2.d': 'В каждом скутере 2 аккумулятора — работайте весь день.',
+    'b3.t': 'Шлем и зарядки бесплатно', 'b3.d': 'Шлем и 2 зарядных устройства входят в аренду — без доплат.',
+    'b4.t': 'Техническая поддержка', 'b4.d': 'Есть вопрос или проблема со скутером — обращайтесь к нам.',
+    'b5.t': 'Официальный партнёр Яндекса', 'b5.d': 'Firali Cargo работает в официальном партнёрстве с Яндексом.',
+    'kit.kicker': 'Комплект', 'kit.title': 'Что входит в аренду?',
+    'kit.1': 'Электроскутер', 'kit.1d': 'С сиденьем', 'kit.2': 'Аккумулятор', 'kit.2d': 'Чтобы работать весь день', 'kit.3': 'Зарядное устройство', 'kit.3d': 'Бесплатно', 'kit.4': 'Шлем', 'kit.4d': 'Бесплатно',
+    'kit.note': 'Всё за одну цену —',
+    'how.kicker': 'Как это работает', 'how.title': 'В путь за 4 шага',
+    's1.t': 'Свяжитесь с нами', 's1.d': 'Позвоните или напишите в Instagram.',
+    's2.t': 'Приходите в офис', 's2.d': 'Возьмите с собой паспорт или ID-карту.',
+    's3.t': 'Договор', 's3.d': 'Подписываем договор аренды и передаём скутер по акту.',
+    's4.t': 'Начинайте работать', 's4.d': 'Скутер, 2 аккумулятора, зарядки и шлем — в путь!',
+    'pr.kicker': 'Цены', 'pr.title': 'Простые и прозрачные цены', 'pr.sub': '<span data-price="1">39 500</span> сум в день — платите только за нужные дни.',
+    'plan.1': '1 день', 'plan.7': '1 неделя', 'plan.14': '2 недели', 'plan.30': '1 месяц',
+    'inc.1': '2 аккумулятора', 'inc.2': '2 зарядки', 'inc.3': 'Шлем', 'inc.4': 'Техподдержка',
+    'calc.title': 'Калькулятор: на сколько дней?', 'calc.sub': 'Двигайте ползунок или выберите срок.', 'calc.label': 'Количество дней',
+    'pr.deposit': 'Условия депозита уточняйте по телефону.',
+    'ya.kicker': 'Партнёрство', 'ya.title': 'Официальное партнёрство с Яндексом',
+    'ya.1': 'Firali Cargo — официальный партнёр Яндекса.', 'ya.2': 'Начните работать в доставке на нашем скутере.', 'ya.3': 'Позвоните нам, чтобы узнать подробности.', 'ya.cta': 'Узнать подробнее',
+    'faq.kicker': 'Вопросы', 'faq.title': 'Частые вопросы', 'faq.cta.t': 'Остались вопросы?', 'faq.cta.d': 'Позвоните — ответим с 9:00 до 21:00.',
+    'q1': 'Сел аккумулятор — что делать?', 'a1': 'Позвоните нам — мы быстро привезём аккумулятор сами. К тому же в каждом скутере 2 аккумулятора.',
+    'q2': 'Что входит в аренду?', 'a2': 'Электроскутер, 2 аккумулятора, 2 зарядных устройства и шлем. Плюс техподдержка.',
+    'q3': 'Сколько стоит?',
+    'q4': 'Какие нужны документы?', 'a4': 'Паспорт или ID-карта. В офисе подпишем договор аренды.',
+    'q5': 'Нужен ли депозит?', 'a5': 'Условия депозита уточняйте по телефону: <a href="tel:+998904888788">+998 90 488-87-88</a>.',
+    'q6': 'Когда вы работаете?', 'a6': 'С 9:00 до 21:00.',
+    'q7': 'Можно работать в Яндексе?', 'a7': 'Firali Cargo — официальный партнёр Яндекса. Позвоните нам, чтобы узнать подробности.',
+    'ct.kicker': 'Контакты', 'ct.title': 'Выезжайте уже сегодня', 'ct.sub': 'Позвоните или напишите в Instagram — ответим на все вопросы.',
+    'ct.phone': 'Телефон', 'ct.hours': 'Время работы', 'ct.addr': 'Адрес',
+    'ct.address': 'г. Ташкент, Учтепинский район, МФЙ Тепакурган, 11-квартал, дом 43, кв. 12',
+    'ct.map': 'Открыть на карте',
+    'foot': 'ООО «Firali Cargo». Все права защищены.'
+  };
+  var RU_META = 'Аренда электроскутеров для курьеров: 39 500 сум в день, 2 аккумулятора, бесплатный шлем и зарядки, техподдержка. Ташкент, 9:00–21:00. +998 90 488-87-88';
+
+  /* Capture the Uzbek copy from the page so it is written only once */
+  var UZ = {}, UZ_ARIA = {};
+  $$('[data-i18n]').forEach(function (el) {
+    var k = el.getAttribute('data-i18n');
+    if (!(k in UZ)) UZ[k] = el.innerHTML;
+  });
+  $$('[data-i18n-aria]').forEach(function (el) { UZ_ARIA[el.getAttribute('data-i18n-aria')] = el.getAttribute('aria-label'); });
+  var metaDesc = $('meta[name="description"]');
+  var UZ_META = metaDesc.getAttribute('content');
+
+  var lang = 'uz';
+
+  /* ---------------- Hero title: split into animated words ---------------- */
+  var wordIndex = 0;
+  function splitWords(el) {
+    var words = el.textContent.trim().split(/\s+/);
+    el.innerHTML = words.map(function (w) {
+      return '<span class="w"><span style="--i:' + (wordIndex++) + '">' + w + '</span></span>';
+    }).join(' ');
+  }
+  function splitHero() {
+    wordIndex = 0;
+    splitWords($('[data-i18n="hero.t1"]'));
+    splitWords($('[data-i18n="hero.t2"]'));
+  }
+
+  /* ---------------- Prices ---------------- */
+  function planTotal(days) { return PRICE_PER_DAY * days; }
+  function renderPrices() {
+    var D = DYN[lang];
+    $$('[data-price]').forEach(function (el) {
+      if (el.hasAttribute('data-count')) {
+        el.setAttribute('data-count', PRICE_PER_DAY);
+        if (el.dataset.seen && !el.dataset.counting) el.textContent = fmt(PRICE_PER_DAY);
+      } else {
+        el.textContent = fmt(PRICE_PER_DAY);
+      }
+    });
+    $$('.plan').forEach(function (plan) {
+      var days = +plan.getAttribute('data-days');
+      var b = $('[data-plan-total]', plan);
+      b.setAttribute('data-count', planTotal(days));
+      if (!b.dataset.counting) b.textContent = b.dataset.seen || !root.classList.contains('js') || reduce ? fmt(planTotal(days)) : '0';
+      $('[data-days-label]', plan).textContent = days > 1 ? D.days(days) : '';
+      $('[data-formula]', plan).textContent = days > 1 ? fmt(PRICE_PER_DAY) + ' × ' + D.days(days) : D.dayRate;
+    });
+    $('#faqPrice').textContent = D.faqPrice(function (d) { return fmt(planTotal(d)); });
+  }
+
+  /* ---------------- Calculator ---------------- */
+  var range = $('#calcRange'), calcTotal = $('#calcTotal'), calcDays = $('#calcDays');
+  var shown = planTotal(+range.value), tweenId = 0;
+  function updateCalc(animate) {
+    var d = +range.value, target = planTotal(d), D = DYN[lang];
+    calcDays.textContent = D.days(d);
+    range.style.setProperty('--fill', ((d - 1) / 29 * 100) + '%');
+    range.setAttribute('aria-valuetext', D.calcAria(d, fmt(target)));
+    $$('#ticks button').forEach(function (b) { b.setAttribute('aria-pressed', String(+b.dataset.v === d)); });
+    cancelAnimationFrame(tweenId);
+    if (!animate || reduce) { shown = target; calcTotal.textContent = fmt(target); return; }
+    var from = shown, t0 = performance.now();
+    (function step(now) {
+      var p = Math.min(1, (now - t0) / 380), e = 1 - Math.pow(1 - p, 3);
+      shown = from + (target - from) * e;
+      calcTotal.textContent = fmt(shown);
+      if (p < 1) tweenId = requestAnimationFrame(step);
+    })(t0);
+  }
+  $$('#ticks button').forEach(function (b) {
+    var v = +b.dataset.v;
+    b.style.left = ((v - 1) / 29 * 100) + '%';
+    b.addEventListener('click', function () { range.value = v; updateCalc(true); });
+  });
+  range.addEventListener('input', function () { updateCalc(true); });
+
+  /* ---------------- Marquee ---------------- */
+  function renderMarquee() {
+    var items = DYN[lang].marquee.map(function (t) { return '<span>' + t.replace('{p}', fmt(PRICE_PER_DAY)) + '</span>'; }).join('');
+    var seq = '<div class="seq">' + items + items + '</div>';
+    $$('.band .track').forEach(function (tr) { tr.innerHTML = seq + seq; });
+  }
+
+  /* ---------------- Open / closed (Tashkent, UTC+5, no DST) ---------------- */
+  function updateStatus() {
+    var now = new Date();
+    var h = (now.getUTCHours() + 5) % 24;
+    var open = h >= OPEN_HOUR && h < CLOSE_HOUR;
+    var D = DYN[lang];
+    $('#status').classList.toggle('is-closed', !open);
+    $('#statusText').textContent = open ? D.open : D.closed;
+    $('#openTag').classList.toggle('is-closed', !open);
+    $('#openTagText').textContent = open ? D.openShort : D.closedShort;
+  }
+
+  /* ---------------- Language ---------------- */
+  function setLang(next, byUser) {
+    lang = next === 'ru' ? 'ru' : 'uz';
+    root.lang = lang;
+    $$('[data-i18n]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n');
+      var v = lang === 'ru' ? RU[k] : UZ[k];
+      if (v != null) el.innerHTML = v;
+    });
+    $$('[data-i18n-aria]').forEach(function (el) {
+      var k = el.getAttribute('data-i18n-aria');
+      var v = lang === 'ru' ? RU[k] : UZ_ARIA[k];
+      if (v) el.setAttribute('aria-label', v);
+    });
+    metaDesc.setAttribute('content', lang === 'ru' ? RU_META : UZ_META);
+    var sw = $('#lang');
+    sw.setAttribute('data-lang', lang);
+    $$('button', sw).forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    if (byUser) $('#heroTitle').style.setProperty('--hd', '0s');
+    splitHero();
+    renderPrices();
+    renderMarquee();
+    updateCalc(false);
+    updateStatus();
+    if (byUser) store.set('fc-lang', lang);
+  }
+  $$('#lang button').forEach(function (b) {
+    b.addEventListener('click', function () { if (b.dataset.lang !== lang) setLang(b.dataset.lang, true); });
+  });
+
+  /* ---------------- Count-up numbers ---------------- */
+  function countUp(el) {
+    var to = +el.getAttribute('data-count');
+    el.dataset.seen = '1';
+    if (reduce) { el.textContent = fmt(to); return; }
+    el.dataset.counting = '1';
+    var t0 = performance.now(), dur = 1500;
+    (function step(now) {
+      var p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 4);
+      el.textContent = fmt(+el.getAttribute('data-count') * e);
+      if (p < 1) requestAnimationFrame(step); else delete el.dataset.counting;
+    })(t0);
+  }
+
+  /* ---------------- Reveal on scroll ---------------- */
+  function revealAll() {
+    $$('.reveal').forEach(function (el) { el.classList.add('in', 'done'); });
+    $$('[data-count]').forEach(function (el) { el.dataset.seen = '1'; el.textContent = fmt(+el.getAttribute('data-count')); });
+  }
+  function initReveal() {
+    if (!('IntersectionObserver' in window)) { revealAll(); return; }
+    if (!reduce) $$('[data-count]').forEach(function (el) { el.textContent = '0'; });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        var el = en.target;
+        el.classList.add('in');
+        $$('[data-count]', el).forEach(countUp);
+        var delay = parseFloat(getComputedStyle(el).getPropertyValue('--d')) || 0;
+        setTimeout(function () { el.classList.add('done'); }, 950 + delay * 1000);
+        io.unobserve(el);
+      });
+    }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+    $$('.reveal').forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------------- Pause loops that are off-screen ---------------- */
+  function initAnimPause() {
+    if (!('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        en.target.classList.toggle('is-off', !en.isIntersecting);
+        var svg = $('svg.smil', en.target);
+        if (svg && svg.pauseAnimations) { if (en.isIntersecting && !reduce) svg.unpauseAnimations(); else svg.pauseAnimations(); }
+      });
+    }, { rootMargin: '120px 0px' });
+    $$('[data-anim]').forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------------- Scroll-driven effects ---------------- */
+  var nav = $('#nav'), bar = $('.progress'), fab = $('#fab'), contact = $('#contact .contact-card');
+  var steps = $('#steps'), track = $('.track-line', steps), stepEls = $$('.step', steps);
+  var horizontal = window.matchMedia('(min-width: 761px)');
+  var ticking = false;
+
+  function layoutTrack() {
+    if (horizontal.matches) { track.style.top = ''; track.style.height = ''; return; }
+    var sr = steps.getBoundingClientRect();
+    var a = $('.step-dot', stepEls[0]).getBoundingClientRect();
+    var b = $('.step-dot', stepEls[stepEls.length - 1]).getBoundingClientRect();
+    track.style.top = (a.top + a.height / 2 - sr.top) + 'px';
+    track.style.height = (b.top + b.height / 2 - (a.top + a.height / 2)) + 'px';
+  }
+
+  function updateSteps() {
+    var vh = window.innerHeight, p, i, marks = [];
+    var tr = track.getBoundingClientRect();
+    if (horizontal.matches) {
+      var sr = steps.getBoundingClientRect();
+      p = (vh * 0.85 - sr.top) / (vh * 0.5);
+      for (i = 0; i < stepEls.length; i++) marks.push(i / (stepEls.length - 1));
+    } else {
+      p = (vh * 0.62 - tr.top) / Math.max(1, tr.height);
+      for (i = 0; i < stepEls.length; i++) {
+        var d = $('.step-dot', stepEls[i]).getBoundingClientRect();
+        marks.push((d.top + d.height / 2 - tr.top) / Math.max(1, tr.height));
+      }
+    }
+    p = Math.max(0, Math.min(1, p));
+    steps.style.setProperty('--p', p.toFixed(4));
+    stepEls.forEach(function (s, k) { s.classList.toggle('on', p >= marks[k] - 0.01); });
+  }
+
+  function onFrame() {
+    ticking = false;
+    var y = window.scrollY, max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
+    nav.classList.toggle('scrolled', y > 10);
+    var cr = contact.getBoundingClientRect();
+    fab.classList.toggle('show', y > window.innerHeight * 0.55 && !(cr.top < window.innerHeight && cr.bottom > 0));
+    updateSteps();
+  }
+  function requestFrame() { if (!ticking) { ticking = true; requestAnimationFrame(onFrame); } }
+  window.addEventListener('scroll', requestFrame, { passive: true });
+  window.addEventListener('resize', function () { layoutTrack(); requestFrame(); });
+
+  /* ---------------- Mobile menu ---------------- */
+  var burger = $('#burger');
+  burger.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
+  });
+  $$('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () { nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('open')) { nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); }
+  });
+
+  /* ---------------- FAQ accordion ---------------- */
+  $$('.qa button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var qa = btn.parentNode, wasOpen = qa.hasAttribute('data-open');
+      $$('.qa[data-open]').forEach(function (o) { o.removeAttribute('data-open'); $('button', o).setAttribute('aria-expanded', 'false'); });
+      if (!wasOpen) { qa.setAttribute('data-open', ''); btn.setAttribute('aria-expanded', 'true'); }
+    });
+  });
+
+  /* ---------------- Pointer effects (desktop only) ---------------- */
+  function initPointer() {
+    if (!finePointer || reduce) return;
+    var stage = $('#stage'), hero = $('.hero'), px = 0, py = 0, pending = false;
+    hero.addEventListener('pointermove', function (e) {
+      var r = stage.getBoundingClientRect();
+      px = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / r.width));
+      py = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / r.height));
+      if (!pending) {
+        pending = true;
+        requestAnimationFrame(function () { pending = false; stage.style.setProperty('--px', px.toFixed(3)); stage.style.setProperty('--py', py.toFixed(3)); });
+      }
+    });
+    hero.addEventListener('pointerleave', function () { stage.style.setProperty('--px', 0); stage.style.setProperty('--py', 0); });
+
+    $$('.tilt').forEach(function (el) {
+      var raf = 0;
+      el.addEventListener('pointerenter', function () { if (el.classList.contains('done')) el.classList.add('tilting'); });
+      el.addEventListener('pointermove', function (e) {
+        if (!el.classList.contains('done')) return;
+        el.classList.add('tilting');
+        var r = el.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        cancelAnimationFrame(raf);
+        raf = requestAnimationFrame(function () {
+          el.style.setProperty('--ry', (x * 7).toFixed(2) + 'deg');
+          el.style.setProperty('--rx', (-y * 7).toFixed(2) + 'deg');
+        });
+      });
+      el.addEventListener('pointerleave', function () {
+        cancelAnimationFrame(raf);
+        el.classList.remove('tilting');
+        el.style.setProperty('--ry', '0deg');
+        el.style.setProperty('--rx', '0deg');
+      });
+    });
+
+    $$('.plan').forEach(function (el) {
+      el.addEventListener('pointermove', function (e) {
+        var r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  }
+
+  /* ---------------- Init ---------------- */
+  try {
+    $('#year').textContent = new Date().getFullYear();
+    var params = new URLSearchParams(location.search);
+    var initial = params.get('lang') || store.get('fc-lang') || 'uz';
+    setLang(initial, false);
+    initReveal();
+    initAnimPause();
+    initPointer();
+    layoutTrack();
+    onFrame();
+    setInterval(updateStatus, 60000);
+    if (reduce) { var svg = $('svg.smil'); if (svg && svg.pauseAnimations) { svg.pauseAnimations(); svg.setCurrentTime(2.8); } }
+    try { sessionStorage.setItem('fc-intro', '1'); } catch (e) {}
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { layoutTrack(); requestFrame(); });
+  } catch (err) {
+    revealAll();
+    if (window.console) console.error(err);
+  }
+})();
+</script>
+</body>
+</html>
